@@ -30,7 +30,7 @@
 
 1. **Clonando o Repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/caslumarket.git
+   git clone https://github.com/RCaslu/caslumarket.git
    cd caslumarket
 
 2. **Abrindo o Projeto**:
