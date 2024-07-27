@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caslu Market</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-stone-200 flex-col">
+  <section 
+  id="carrinho" 
+  class="z-50 fixed top-0 right-[-360px] bg-stone-500 h-screen w-[360px] text-slate-200 duration-200 border-l border-slate-200 p-5 flex flex-col justify-between">
+    <div id="cabecalho-carrinho" class="flex justify-between m-4">
+      <p>Meu carrinho</p>
+      <button id="fechar-carrinho"><i class="fa-solid fa-circle-xmark"></i></button>
+    </div>
+    <section id="produtos-carrinho" class="h-3/5 overflow-y-auto flex flex-col gap-2"></section>
+    <p id="preco-total" class="bg-slate-200 text-green-800 rounded-sm pl-5">Total: </p>
+    <button id="finalizar-compra" class="bg-slate-200 text-slate-900 p-1 hover:text-slate-200 hover:bg-slate-900">Finalizar compra</button>
+  </section>
+  <header class="flex text-xl bg-stone-500 shadow-sky-200 shadow-lg px-8 py-4 justify-between sticky top-0 z-10">
+    <a href="/public">
+      <img class="h-16 p-2" src="../assets/logo/hashtag.svg" alt="Logo do Caslu Market">
+    </a>
+    <div class="text-slate-200 flex gap-2 items-end mx-3">
+    <a href="/pedidos.html">
+      <button id="abrir-historico" class="mx-2"><i class="fa-solid fa-user"></i></button>
+    </a>
+      <button id="abrir-carrinho" class="mr-2"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+  </header>
+  <main class="flex  flex-col items-center">
+    <section id="filtros" class="p-10 flex">
+      <div class="px-2">
+        <input id='exibir-todos' type="radio" name="filtro" class="peer hidden" checked>
+        <label for="exibir-todos" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Todos</label>
+      </div>
+      <div class="px-2">
+        <input id='exibir-masculinos' type="radio" name="filtro" class="peer hidden">
+        <label for="exibir-masculinos" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Masculinos</label>
+      </div>
+      <div class="px-2">
+        <input id='exibir-femininos' type="radio" name="filtro" class="peer hidden">
+        <label for="exibir-femininos" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Femininos</label>
+      </div>
+    </section>
+    <section id="container-produto" class="flex flex-wrap p-10 justify-center gap-2">
+    </section>
+  </main>
+  <script type="module" src="../main.js"></script>
+</body>
+</html>
