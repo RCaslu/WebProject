@@ -1,8 +1,8 @@
-# CasluMarket
+# WebProject
 
 ## Descrição do Projeto
 
-**CasluMarket** é um site de vendas de tênis, desenvolvido para oferecer uma experiência de e-commerce completa com funcionalidades como carrinho de compras, checkout e histórico de pedidos. Utilizando HTML, CSS e JavaScript, o projeto foi implementado com foco na simplicidade e na funcionalidade eficiente do frontend e backend.
+**WebProject** é um site de vendas de tênis, desenvolvido para oferecer uma experiência de e-commerce completa com funcionalidades como carrinho de compras, checkout e histórico de pedidos. Utilizando HTML, CSS e JavaScript, o projeto foi implementado com foco na simplicidade e na funcionalidade eficiente do frontend e backend.
 
 ## Funcionalidades
 
@@ -31,7 +31,7 @@
 1. **Clonando o Repositório**:
    ```bash
    git clone https://github.com/RCaslu/caslumarket.git
-   cd caslumarket
+   cd WebProject
 
 2. **Abrindo o Projeto**:
     - Abra o arquivo index.html em um navegador da sua escolha para visualizar o site.
